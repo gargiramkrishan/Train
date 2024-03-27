@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!--Camera-->
+      <a-entity position="0 300 300" acceleration="-999">
+        <a-camera></a-camera>
+      </a-entity>
+      <a-assets>
+      <a-assets-item id = "rail" src="./railway_track_train_route_railway_parts_rail/scene.gltf">
+      </a-assets-item>
+      </a-assets>
+      <a-assets>
+        <a-assets-item id = "train" src="./Daring Sango-Fyyran.glb">
+        </a-assets-item>
+      </a-assets>
+      <a-entity>
+        <a-entity position="0 0 0" scale = "400 400 300"gltf-model="#rail"></a-entity>
+      </a-entity>
+      <a-entity>
+        <a-entity position="0 20 0" scale = "5 5 5"gltf-model="#train"></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
